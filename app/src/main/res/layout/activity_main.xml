@@ -1,15 +1,15 @@
 <!-- parent (root) linear layout -->
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
-
-        <ImageView
-            android:src="@drawable/rugbypitch"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scaleType="centerCrop"/>
+        android:scaleType="centerCrop"
+        android:src="@drawable/rugbypitch" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -42,9 +42,9 @@
                 android:gravity="center"
                 android:paddingBottom="24dp"
                 android:text="0"
-                android:textStyle="bold"
                 android:textColor="#000000"
-                android:textSize="56sp"/>
+                android:textSize="56sp"
+                android:textStyle="bold" />
 
             <!-- try add 5 points-->
             <Button
@@ -92,7 +92,7 @@
             android:layout_width="1dp"
             android:layout_height="match_parent"
             android:layout_marginTop="16dp"
-            android:background="@android:color/darker_gray"/>
+            android:background="@android:color/darker_gray" />
 
         <!-- team b linear layout -->
         <LinearLayout
@@ -109,7 +109,7 @@
                 android:padding="16dp"
                 android:text="Team B"
                 android:textColor="#000000"
-                android:textSize="20sp"/>
+                android:textSize="20sp" />
 
             <!-- displays score -->
             <TextView
@@ -120,9 +120,9 @@
                 android:gravity="center"
                 android:paddingBottom="24dp"
                 android:text="0"
-                android:textStyle="bold"
                 android:textColor="#000000"
-                android:textSize="56sp" />
+                android:textSize="56sp"
+                android:textStyle="bold" />
 
 
             <!-- add five points for team b for try -->
@@ -176,6 +176,6 @@
         android:layout_marginBottom="32dp"
         android:onClick="resetScoresToZero"
         android:text="Reset"
-        android:textColor="#f04640"/>
+        android:textColor="#f04640" />
 
 </RelativeLayout>
