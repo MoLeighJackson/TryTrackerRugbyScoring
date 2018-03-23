@@ -1,11 +1,9 @@
-package com.example.moleigh.courtcounter;
+package com.example.moleigh.trytrackerrugbyscoring;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
-
-import com.example.moleigh.trytrackerrugbyscoring.R;
 
 public class MainActivity extends AppCompatActivity {
     /**
@@ -46,10 +44,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Add 1 point for Team A.
+     * Add 5 points for Team A.
      */
-    public void addOnePointForTeamA(View v) {
-        scoreTeamA = scoreTeamA + 1;
+    public void addFivePointsForTeamA(View v) {
+        scoreTeamA = scoreTeamA + 5;
         displayForTeamA(scoreTeamA);
     }
 
@@ -63,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Add 3 points for Team B.
+     * Add 3 points for Team .
      */
     public void addThreePointsForTeamB(View v) {
         scoreTeamB = scoreTeamB + 3;
@@ -71,6 +69,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
+     *
      * Add 2 points for Team B.
      */
     public void addTwoPointsForTeamB(View v) {
@@ -79,10 +78,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Add 1 point for Team B.
+     * Add 5 points for Team B.
      */
-    public void addOnePointForTeamB(View v) {
-        scoreTeamB = scoreTeamB + 1;
+    public void addFivePointsForTeamB(View v) {
+        scoreTeamB = scoreTeamB + 5;
         displayForTeamB(scoreTeamB);
     }
 
